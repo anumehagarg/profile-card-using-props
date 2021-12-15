@@ -3,6 +3,7 @@ import React from "react";
 const Profilecard = ({altname,avatarUrl,name,email,id,onDelete}) =>  {
 
         const handleDelete = () => {
+            if(typeof onDelete)
             onDelete(id);
         }
     
